@@ -29,8 +29,7 @@ create table movie_actor(
              id  INT      not null,
         imdb_id  VARCHAR  not null,
           actor  VARCHAR  not null,
-    PRIMARY KEY  (id)     
-    PRIMARY KEY  (imdb_id) 
+    PRIMARY KEY  (id,imdb_id)     
     FOREIGN KEY  (imdb_id) REFERENCES top_imdb (imdb_id) 
 );
 
@@ -39,14 +38,13 @@ create table movie_director(
              id  INT      not null,
         imdb_id  VARCHAR  not null,
        director  VARCHAR  not null,
-    PRIMARY KEY  (id)     
-    PRIMARY KEY  (imdb_id) 
+    PRIMARY KEY  (id,imdb_id)     
     FOREIGN KEY  (imdb_id) REFERENCES top_imdb (imdb_id) 
 );
 
 
 create table streaming_service(
-     service_id  VARCHAR      not null,
+     service_id  VARCHAR  not null,
    service_name  VARCHAR  not null,
     PRIMARY KEY  (service_id) 
 );
@@ -56,8 +54,7 @@ create table movie_streaming(
        imdb_id  VARCHAR   not null,
     service_id  VARCHAR   not null,
          price  VARCHAR   not null,
-    PRIMARY KEY (id)     
-    PRIMARY KEY (imdb_id)  
+    PRIMARY KEY (id,imdb_id)     
     FOREIGN KEY (imdb_id)    REFERENCES top_imdb (imdb_id) 
     FOREIGN KEY (service_id) REFERENCES streaming_service (service_id) 
 );

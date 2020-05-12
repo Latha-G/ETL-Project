@@ -1,46 +1,47 @@
 top_imdb
 -
-imdb_id INT PK
+    imdb_id  INT     PK
 movie_title  VARCHAR
 
 movie
 -
-imdb_id INT PK FK >- top_imdb.imdb_id
-imdb_rank int
-title VARCHAR
-year int
-runtime int
-rated VARCHAR
-imdb_rating int
-production VARCHAR
+    imdb_id  VARCHAR PK FK >- top_imdb.imdb_id
+  imdb_rank  INT
+      title  VARCHAR
+       year  INT
+    runtime  INT
+      rated  VARCHAR
+imdb_rating  DECIMAL
+production   VARCHAR
 
 movie_actor
 -
-id INT PK
-imdb_id INT PK FK >- top_imdb.imdb_id
-actor VARCHAR
+     id  INT      PK
+imdb_id  VARCHAR  PK FK >- top_imdb.imdb_id
+  actor  VARCHAR
 
 movie_director
 -
-id INT PK
-imdb_id INT PK FK >- top_imdb.imdb_id
-director VARCHAR
+      id  INT     PK
+ imdb_id  VARCHAR PK FK >- top_imdb.imdb_id
+director  VARCHAR
 
 streaming_service
 -
-service_id INT PK
-service_name VARCHAR
+  service_id  VARCHAR PK
+service_name  VARCHAR
 
 movie_streaming
 -
-id INT PK
-imdb_id INT FK >- top_imdb.imdb_id
-service_id INT FK >- streaming_service.service_id
+        id  INT PK
+   imdb_id  VARCHAR  FK >- top_imdb.imdb_id
+service_id  VARCHAR  FK >- streaming_service.service_id
+     price  VARCHAR  not null,
 
 netflix_movie
 -
-id INT PK
-imdb_id INT FK >- top_imdb.imdb_id
-title VARCHAR
+     id  INT      PK
+imdb_id  VARCHAR  FK >- top_imdb.imdb_id
+  title  VARCHAR
 
 

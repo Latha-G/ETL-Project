@@ -1,4 +1,4 @@
-# ETL-Project
+# ETL Project
 
 ## Team Members
 

@@ -1,11 +1,12 @@
 # ETL-Project
 
-**Team Members**
+## Team Members
 
-Dianne Jardinez, Aastha Arora, Swarna Latha
+Dianne Jardin**e**z, Aas**t**ha Arora, Swarna **L**atha
 
 ## Project Proposal
-
+    -
+    -
 
 ## Finding Data
 
@@ -33,7 +34,7 @@ The following Data Sources were used below:
 ## Data Cleanup & Analysis
 
 - Data extracted were formated in CSV and JSON files
-- The data formated files were manipulated in pandas to clean, join, and filter for 7 tables
+- The data formated files were manipulated in pandas to clean, join, and filter 7 tables
 
 ## Project Report
 - **E**xtract: 

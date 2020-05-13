@@ -4,9 +4,8 @@
 
 Dianne Jardin**e**z, Aas**t**ha Arora, Swarna **L**atha
 
-## Project Proposal
-    -
-    -
+## Project Summary
+The objective of this project was to extract data from websites and available  APIs. The following datasets were then transformed by cleaning, joining, and filtering into seven tables. The object-relational database (PostgreSQL) was used to load the datasets into pgAdmin.
 
 ## Finding Data
 
@@ -37,8 +36,4 @@ The following Data Sources were used below:
 - The data formated files were manipulated in pandas to clean, join, and filter 7 tables
 
 ## Project Report
-- **E**xtract: 
-
-- **T**ransform:  
-
-- **L**oad: 
+[Project Report document](https://docs.google.com/document/d/182xyKrRQQ8iH1hWltAsFGWree_DmZBSVp5EOHYR6ECI/edit?usp=sharing)

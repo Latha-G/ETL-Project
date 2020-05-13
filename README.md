@@ -34,6 +34,8 @@ The following Data Sources were used below:
 
 - Data extracted were formated in CSV and JSON files
 - The following datasets were then transformed by cleaning, joining, and filtering into seven tables
+- The object-relational database (PostgreSQL) was used to load the datasets into pgAdmin. A relational database was selected as the data was in a structured format
+
 
 ## Project Report
-Project Report document
+[Project Report document](./Project_Report.pdf)

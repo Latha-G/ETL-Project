@@ -31,14 +31,12 @@ service_name  VARCHAR
 
 google_movie_streaming
 -
-          id  INT PK
-     imdb_id  VARCHAR  FK >- top_imdb.imdb_id
+       title  VARCHAR  FK >- top_imdb.imdb_id
   service_id  VARCHAR  FK >- streaming_service.service_id
        price  VARCHAR
 
 utelly_movie_streaming
 -
-          id  INT PK
      imdb_id  VARCHAR  FK >- top_imdb.imdb_id
   service_id  VARCHAR  FK >- streaming_service.service_id
 
@@ -47,5 +45,3 @@ netflix_movie
          id  INT      PK
     imdb_id  VARCHAR  FK >- top_imdb.imdb_id
       title  VARCHAR
-
-

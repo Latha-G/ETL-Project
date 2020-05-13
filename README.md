@@ -33,7 +33,7 @@ The following Data Sources were used below:
 ## Data Cleanup & Analysis
 
 - Data extracted were formated in CSV and JSON files
-- The data formated files were manipulated in pandas to clean, join, and filter 7 tables
+- The following datasets were then transformed by cleaning, joining, and filtering into seven tables
 
 ## Project Report
-[Project Report document](https://docs.google.com/document/d/182xyKrRQQ8iH1hWltAsFGWree_DmZBSVp5EOHYR6ECI/edit?usp=sharing)
+Project Report document

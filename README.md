@@ -5,7 +5,7 @@
 Dianne Jardin**e**z, Aas**t**ha Arora, Swarna **L**atha
 
 ## Project Summary
-The objective of this project was to extract data from websites and available  APIs. The following datasets were then transformed by cleaning, joining, and filtering into seven tables. The object-relational database (PostgreSQL) was used to load the datasets into pgAdmin.
+The objective of this project was to extract data from websites and available  APIs. The following datasets were then transformed by cleaning, joining, and filtering into nine tables. The object-relational database, PostgreSQL, was used to load the datasets into pgAdmin.
 
 ## Finding Data
 
@@ -24,7 +24,7 @@ The following Data Sources were used below:
 
 - [uNoGS API](https://rapidapi.com/unogs/api/unogs/endpoints)
     - Method: API Extraction
-    - Used For: Collecting movies on Netflix in released in the United States which have an IMDb rating greater than or equal to 7
+    - Used For: Collecting movies on Netflix in released in the United States which have an IMDb rating between 7 and 10
 
 - [Google Search Engine](https://www.google.com/search?&q=)
     - Method: Webscraping
@@ -33,9 +33,28 @@ The following Data Sources were used below:
 ## Data Cleanup & Analysis
 
 - Data extracted were formated in CSV and JSON files
-- The following datasets were then transformed by cleaning, joining, and filtering into seven tables
-- The object-relational database (PostgreSQL) was used to load the datasets into pgAdmin. A relational database was selected as the data was in a structured format
+- The following datasets were then transformed by cleaning, joining, and filtering into nine tables
+- The object-relational database, PostgreSQL, was used to load the datasets into pgAdmin. A relational database was selected as the data was in a structured format
 
 
 ## Project Report
-[Project Report document](./Project_Report.pdf)
+
+- **E**xtract: 
+    - `Google scraping.ipynb`: 
+        - contains IMDB website and Google Search Engine Webscraping
+    - `netflix_high_imdb_rated(uNoGS api).ipynb`:
+        - contains IMDB website Webscraping, OMDb API, and uNoGS API extraction
+    -  `streaming_options(utelly api).ipynb`:
+        - contains Utelly API extraction
+
+- **T**ransform:
+    - `Transform.ipynb`:
+        - contains all datasets that were transformed into nine tables
+
+- **L**oad:
+    - `SQL` folder:
+        - contains ERD and schema
+    - `SQL_Table` folder:
+        - contains all nine tables created in pgAdmin with PostgreSQL
+    - [Project Report document](./Project_Report.pdf):
+        - contains detailed project description and sample PostgreSQL queries in pgAdmin
